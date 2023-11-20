@@ -103,7 +103,7 @@ const PackagesPage: React.FC = () => {
 
     return (
         <>
-            {loading && <Loading />}
+            <Loading isLoading={loading} />
             <Layout>
                 <S.BackgroundImage>
                     <S.DivSearch>

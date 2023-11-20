@@ -66,7 +66,7 @@ const Home: React.FC = () => {
 
     return (
         <>
-            {loading && <Loading />}
+            <Loading isLoading={loading} />
             <Layout>
                 <S.BackgroundImage >
                     <S.FirstSection>

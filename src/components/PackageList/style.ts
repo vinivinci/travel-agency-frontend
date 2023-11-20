@@ -1,22 +1,5 @@
 import styled from 'styled-components';
 
-export const Card = styled.div`
-  position: relative;
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  height: 250px;
-  cursor:pointer;
-  &:hover {
-     transform: scale(1.05);
-    button {
-      background-color: #66857A; 
-     color: #fff;
-     transition: 1s;
-    }
-     
-  }
-`;
 
 export const CardImage = styled.img`
   width: 100%;
@@ -33,7 +16,7 @@ export const CardInfo = styled.div`
   width: 100%;
   padding: 10px;
   box-sizing: border-box; 
-  height: 80px; 
+  height: 100px; 
 `;
 
 export const Destination = styled.h2`
@@ -74,4 +57,22 @@ export const SeeMoreButton = styled.button`
     align-items: center;
     justify-content: center;
   
+`;
+export const Card = styled.div`
+  position: relative;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  height: 250px;
+  cursor:pointer;
+
+  &:hover {
+     transform: scale(1.05);
+    button {
+      background-color: #66857A; 
+     color: #fff;
+     transition: 1s;
+    }
+     
+  }
 `;
