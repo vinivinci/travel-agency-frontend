@@ -1,4 +1,3 @@
-// src/components/DualInput/DualInput.tsx
 import React from 'react';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Icon } from '@iconify/react';

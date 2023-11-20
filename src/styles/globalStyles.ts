@@ -2,30 +2,26 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  /* Reset CSS */
   *, *::before, *::after {
     box-sizing: border-box;
   }
   
-  /* Variáveis de cores */
   :root {
-    --color-primary: #5B8DF7; // Cor primária, exemplo: azul
-    --color-secondary: #FFD700; // Cor secundária, exemplo: amarelo ouro
-    --color-accent: #F53F3F; // Cor de acento, exemplo: vermelho
-    --color-background: #ffffff; // Cor de fundo
-    --color-foreground: #f0f0f0; // Cor de fundo secundária
-    --color-text: #333333; // Cor do texto principal
-    --color-text-secondary: #777777; // Cor do texto secundária
-    --color-text-inverted: #ffffff; // Cor do texto em fundos escuros
-    --color-border: #dddddd; // Cor da borda
+    --color-primary: #5B8DF7; 
+    --color-secondary: #FFD700; 
+    --color-accent: #F53F3F; 
+    --color-background: #ffffff; 
+    --color-foreground: #f0f0f0; 
+    --color-text: #333333; 
+    --color-text-secondary: #777777; 
+    --color-text-inverted: #ffffff; 
+    --color-border: #dddddd; 
   }
   
-  /* Fontes */
   --font-family-sans-serif: 'Open Sans', sans-serif;
   --font-family-serif: 'Merriweather', serif;
   --font-family-monospace: 'Monaco', monospace;
 
-  /* Tipografia Base */
   body {
     margin: 0;
     padding: 0;
@@ -35,7 +31,6 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.6;
   }
 
-  /* Links */
   a {
     color: var(--color-primary);
     text-decoration: none;
@@ -45,13 +40,11 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  /* Títulos */
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-serif);
     color: var(--color-primary);
   }
 
-  /* Botões e inputs */
   button, input, textarea {
     font-family: inherit;
     font-size: inherit;
@@ -72,11 +65,9 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  /* Utilidades */
   .text-center {
     text-align: center;
   }
 
-  /* Adicione mais utilidades conforme necessário... */
 `;
 

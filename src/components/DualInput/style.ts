@@ -1,4 +1,3 @@
-// src/components/DualInput/style.ts
 import styled from 'styled-components';
 import DatePicker from 'react-datepicker';
 
@@ -52,7 +51,6 @@ export const StyledDatePicker = styled(DatePicker)`
     }
   }
 
-  // Adicione estilos adicionais para o DatePicker aqui, se necessário
 `;
 
 export const DatePickerIconContainer = styled.div`
@@ -66,6 +64,6 @@ export const DatePickerIconContainer = styled.div`
   }
 
   .iconify {
-    margin-right: 10px; // ajuste conforme necessário para o espaçamento do ícone
+    margin-right: 10px; 
   }
 `;
