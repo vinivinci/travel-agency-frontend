@@ -24,7 +24,6 @@ const Header: React.FC = () => {
 
     useEffect(() => {
         const token = localStorage.getItem('token');
-        console.log(token);
         if (token) {
             setIsLogged(true);
         }
@@ -36,7 +35,6 @@ const Header: React.FC = () => {
     }, [isLogged])
 
     const getInitials = (name: string) => {
-        console.log(name)
         if (!name || name === '') {
             return '';
         }

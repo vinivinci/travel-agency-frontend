@@ -61,7 +61,6 @@ const PackagesPage: React.FC = () => {
             setPackages(response.data);
             setLoading(false);
         }).catch((error) => {
-            console.log(error);
             setLoading(false);
         });
     }, [searchParams]);
@@ -92,7 +91,6 @@ const PackagesPage: React.FC = () => {
             setLoading(false);
         }).catch((error) => {
             setPackages([])
-            console.log(error);
             setLoading(false);
         });
     }, [origin, destination, startDate, endDate, adults, rooms]);
