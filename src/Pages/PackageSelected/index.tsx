@@ -3,7 +3,7 @@ import Slider, { Settings } from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Package } from '../../interfaces/package';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Layout from '../../components/Layout';
 import api from '../../services/api';
 import Loading from '../../components/Loading';
@@ -14,6 +14,7 @@ const PackageSelected: React.FC = () => {
     const [packageSelected, setPackageSelected] = React.useState<Package>();
     const [loading, setLoading] = React.useState<boolean>(false);
     const { id } = params;
+    const navigate = useNavigate();
 
     const mainSlider = useRef<Slider>(null);
     const thumbSlider = useRef<Slider>(null);
@@ -98,7 +99,7 @@ const PackageSelected: React.FC = () => {
                     </S.PackageInfo>
                     <S.PriceButtonWrapper>
                         <S.PackagePrice>R$ {packageSelected.price}</S.PackagePrice>
-                        <S.ReserveButton>Reservar</S.ReserveButton>
+                        <S.ReserveButton onClick={() => navigate(`/checkout/${packageSelected.packageID}`)}>Reservar</S.ReserveButton>
                     </S.PriceButtonWrapper>
                 </S.Container>
             )}

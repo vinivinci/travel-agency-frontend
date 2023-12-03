@@ -12,7 +12,6 @@ const api = axios.create({
 });
 
 api.interceptors.response.use(async config => {
-
     if (config.status === 401) {
         localStorage.removeItem('token');
         window.location.href = '/login';

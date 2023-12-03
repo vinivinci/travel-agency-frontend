@@ -33,7 +33,7 @@ const LoginPage: React.FC = () => {
                 }
                 const response = await api.post('/auth', { email: user.email, password: user.password });
                 api.defaults.headers.authorization = `Bearer ${response.data.access_token}`;
-                localStorage.setItem('token', response.data.access_token);
+                localStorage.setItem('token', 'Bearer ' + response.data.access_token);
                 localStorage.setItem('user', JSON.stringify({
                     email: response.data.email,
                     name: response.data.name,

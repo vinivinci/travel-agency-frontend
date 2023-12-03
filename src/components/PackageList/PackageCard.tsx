@@ -15,8 +15,8 @@ const PackageCard: React.FC<Package> = ({
 }) => {
     const navigate = useNavigate();
     return (
-        <S.Card>
-            <S.SeeMoreButton onClick={() => navigate(`pacotes/${packageID}`)}>Ver mais</S.SeeMoreButton>
+        <S.Card onClick={() => navigate(`/pacotes/${packageID}`)}>
+            <S.SeeMoreButton >Ver mais</S.SeeMoreButton>
             <S.CardImage src={images[0].image} alt={packageName} />
             <S.CardInfo>
                 <S.Destination>{destination}</S.Destination>

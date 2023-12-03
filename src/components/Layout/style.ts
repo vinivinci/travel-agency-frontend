@@ -6,6 +6,7 @@ export const Layout = styled.div`
     flex-direction: column;
     min-height: 100vh;
     justify-content: center;
+    
 `
 
 export const Content = styled.main`

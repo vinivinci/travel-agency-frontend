@@ -64,7 +64,7 @@ const Header: React.FC = () => {
                     Pacotes
                 </S.StyledLink>
                 {
-                    isLogged && <S.StyledLink to="/pacotes" >
+                    isLogged && <S.StyledLink to="/reservas" >
                         <Icon style={{ marginRight: "10px" }} icon="ion:book" />
                         Reservas
                     </S.StyledLink>
@@ -88,9 +88,6 @@ const Header: React.FC = () => {
                                 {getInitials(userName)}
                             </S.UserInitialsCircle>
                             <S.DropdownMenu className={showDropdown ? 'show' : ''}>
-                                <S.DropdownItem onClick={() => navigate('/edit-profile')}>
-                                    Editar Perfil
-                                </S.DropdownItem>
                                 <S.DropdownItem onClick={handleLogout}>
                                     Logout
                                 </S.DropdownItem>
